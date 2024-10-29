@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;700;800&family=Lilita+One&family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins';
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: #ff7eb9;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #ff6495;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: opacity 10s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Media Queries */
+@media (min-width: 600px) {
+    .container {
+        padding: 30px;
+        max-width: 70%;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        padding: 40px;
+        max-width: 50%;
+    }
+    
+    h1 {
+        font-size: 3rem;
+    }
+    
+    p {
+        font-size: 1.8rem;
+    }
+}
